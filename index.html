@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management</h1>
+        <div>
+            <label for="department">Filter by Department:</label>
+            <select id="department">
+                <option value="">--Select Department--</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">Filter by Gender:</label>
+            <select id="gender">
+                <option value="">--Select Gender--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div>
+            <label for="sort">Sort by Salary:</label>
+            <select id="sort">
+                <option value="">--Select Order--</option>
+                <option value="asc">Low to High</option>
+                <option value="desc">High to Low</option>
+            </select>
+        </div>
+        <table id="employee-table">
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="pagination">
+            <button id="prev-page">Previous</button>
+            <span id="current-page">1</span> / <span id="total-pages">1</span>
+            <button id="next-page">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
